@@ -7,36 +7,36 @@
     <link rel="stylesheet" href="materialize/css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">     
 </head>
-<body class="container center-align grey darken-4">
-    <section id="contacto" class="row">
+<body class="center-align grey darken-4">
+    <section  class="containterforms" id="contacto">
         
-       <div class="col s12 m6 l6"> 
+       <div class="formContat"> 
         <h2 class="light-green-text text-accent-3">Contacto</h2>
         <div class="row grey-text text-lighten-4">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s12 m6 l6">
+            <form >
+                <div >
+                    <div class="input-field">
                         <input id="nombre" type="text" class="validate">
                         <label for="nombre">Nombre</label>
                     </div>
-                    <div class="input-field col s12 m6 l6">
+                    <div class="input-field">
                         <input id="apellido" type="text" class="validate">
                         <label for="apellido">Apellido</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-field col s12 m6 l6">
+                <div >
+                    <div class="input-field">
                         <i class="material-icons prefix">phone</i>
                         <input id="Telefono" type="tel" class="validate">
                         <label for="Telefono">Telefono/Movil</label>
                     </div>
-                    <div class="input-field col s12 m6 l6">
+                    <div class="input-field">
                         <i class="material-icons prefix">mail_outline</i>
                         <input id="email" type="email" class="validate">
                         <label for="email">Email</label>
                     </div>
                 </div>
-                <div class="input-field col s12 m6 l6 " id="Asunto">
+                <div class="input-field " id="Asunto">
                         <select>
                             <option value="" disabled selected>Asunto</option>
                             <option value="1">Consulta</option>
@@ -46,8 +46,8 @@
                         <label>Asunto</label>
                 </div>
                 
-            <div class="row">
-                <div class="input-field col s12 ">
+            <div>
+                <div class="input-field  ">
                 <textarea id="textarea1" class="materialize-textarea"></textarea>
                 <label for="textarea1">Mensaje</label>
                 </div>
@@ -61,17 +61,15 @@
                   <input class="file-path validate " type="text">
                 </div>
             </div>
-            <div class="row">
-            <p class="col s12 m12 l12">¿Queres recibir nuestro newsletter con ofertas únicas? </p>
-              <p class="col s6 m6 l6">
-                <label>
-                  <input class="with-gap" name="group1" type="radio"  />
+            <div >
+            <p >¿Queres recibir nuestro newsletter con ofertas únicas? </p>
+              <p>
+                <label class="itemhalf">
+                  <input  name="group1" type="radio"  />
                   <span>Obvio</span>
                 </label>
-              </p>
-              <p class="col s6 m6 l6">
-                <label>
-                  <input class="with-gap light-green accent-3" name="group1" type="radio"  />
+                <label class="itemhalf">
+                  <input class="light-green accent-3" name="group1" type="radio"  />
                   <span>No, Gracias</span>
                 </label>
               </p>
@@ -82,7 +80,7 @@
             </form>
           </div>
         </div>
-        <div class="col s12 m6 l6">
+        <div class="map">
             <h2 class="light-green-text text-accent-3">Ubicación</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26314.675172074494!2d-58.53075329999645!3d-34.4690403093055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb036a4f3c509%3A0x1e4dbd82bae3f674!2sDexter!5e0!3m2!1ses-419!2sar!4v1713706875461!5m2!1ses-419!2sar" width="100%" height="75%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
