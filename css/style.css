@@ -1,23 +1,5 @@
 @media only screen and (max-width: 600px) {
-    footer{
-        width: 100%;
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: auto;
-        background-color:#64dd17;
-        color: black;
-    }
-    #footline{
-        font-size: 1rem;
-        font-weight: bolder;
-    }
-    footer div i{
-        color:black;
-        font-size: large;
-    }
-    
-    .containterforms {
+     .containterforms {
         width: 100%;
         display: grid;
         gap: 1rem;
@@ -51,9 +33,26 @@
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
+    footer{
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        background-color:#64dd17;
+        color: black;
+    }
+    #footline{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    footer div i{
+        color:black;
+        font-size: large;
+    }
 }
 
-/* Small devices (600px and up) */
+/* Medium devices (600px and up) */
 @media only screen and (min-width: 600px) {
     .containterforms {
         min-width: 100%;
@@ -103,63 +102,8 @@
     }
     footer div i{
         color:black;
-        font-size: large;
-    }
-}
-
-/* Medium devices (768px and up) */
-@media only screen and (min-width: 768px) {
-    .containterforms {
-        min-width: 100%;
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-    }
-
-    .formContat {
-        grid-column-start: 2;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 8;
-    }
-
-    .map {
-        grid-column-start: 8;
-        grid-column-end: 12;
-        grid-row-start: 1;
-        grid-row-end: 8;
-    }
-
-    .itemhalf {
-        grid-auto-columns: min-content;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-
-    iframe {
-        max-width: auto;
-        height: 80%;
-        margin-bottom: 48px;
-    }
-    footer{
-        width: 100%;
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: auto;
-        background-color:#64dd17;
-        color: black;
-    }
-    #footline{
-        font-size: 1rem;
-        font-weight: bolder;
-    }
-    footer div i{
-        color:black;
         font-size: x-large;
     }
-
 }
 
 /* Large devices (992px and up) */
