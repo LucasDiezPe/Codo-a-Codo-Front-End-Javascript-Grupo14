@@ -1,5 +1,5 @@
 @media only screen and (max-width: 600px) {
-    .containterforms {
+     .containterforms {
         width: 100%;
         display: grid;
         gap: 1rem;
@@ -23,9 +23,9 @@
     }
 
     iframe {
-        max-width: auto;
-        height: 100%;
-        margin-bottom: 48px;
+        max-width: 100%;
+        height: auto ;
+        margin-bottom: 2rem;
     }
 
     .itemhalf {
@@ -33,9 +33,28 @@
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
+    footer{
+        margin-top: 1rem;
+        margin-bottom: 0px;
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        background-color:#64dd17;
+        color: black;
+    }
+    #footline{
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    footer div i{
+        color:black;
+        font-size: large;
+    }
 }
 
-/* Small devices (600px and up) */
+/* Medium devices (600px and up) */
 @media only screen and (min-width: 600px) {
     .containterforms {
         min-width: 100%;
@@ -70,42 +89,23 @@
         height: 100%;
         margin-bottom: 48px;
     }
-}
-
-/* Medium devices (768px and up) */
-@media only screen and (min-width: 768px) {
-    .containterforms {
-        min-width: 100%;
+    footer{
+        margin-top: 2rem;
+        width: 100%;
         display: grid;
-        gap: 2rem;
+        gap: 1rem;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: auto;
+        background-color:#64dd17;
+        color: black;
     }
-
-    .formContat {
-        grid-column-start: 2;
-        grid-column-end: 7;
-        grid-row-start: 1;
-        grid-row-end: 8;
+    #footline{
+        font-size: 1rem;
+        font-weight: bolder;
     }
-
-    .map {
-        grid-column-start: 8;
-        grid-column-end: 12;
-        grid-row-start: 1;
-        grid-row-end: 8;
-    }
-
-    .itemhalf {
-        grid-auto-columns: min-content;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
-
-    iframe {
-        max-width: auto;
-        height: 80%;
-        margin-bottom: 48px;
+    footer div i{
+        color:black;
+        font-size: x-large;
     }
 }
 
@@ -116,7 +116,7 @@
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: auto;
     }
 
     .formContat {
@@ -137,5 +137,32 @@
         grid-auto-columns: min-content;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+    iframe {
+        max-width: 100%;
+        height: 80%;
+        margin-bottom: 48px;
+    }
+    footer{
+        margin-top: 2rem;
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        background-color:#64dd17;
+        color: black;
+        padding: 2rem;
+
+    }
+    #footline{
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    footer div i{
+        color:black;
+        font-size: xx-large ;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 }
