@@ -8,6 +8,14 @@
         background-color:#64dd17;
         color: black;
     }
+    #footline{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    footer div i{
+        color:black;
+        font-size: large;
+    }
     
     .containterforms {
         width: 100%;
@@ -89,6 +97,14 @@
         background-color:#64dd17;
         color: black;
     }
+    #footline{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    footer div i{
+        color:black;
+        font-size: large;
+    }
 }
 
 /* Medium devices (768px and up) */
@@ -135,6 +151,14 @@
         background-color:#64dd17;
         color: black;
     }
+    #footline{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    footer div i{
+        color:black;
+        font-size: x-large;
+    }
 
 }
 
@@ -176,6 +200,16 @@
         background-color:#64dd17;
         color: black;
         padding: 2rem;
-        
+
+    }
+    #footline{
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    footer div i{
+        color:black;
+        font-size: xx-large ;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
 }
