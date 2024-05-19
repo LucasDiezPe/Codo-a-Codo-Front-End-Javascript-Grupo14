@@ -1,4 +1,13 @@
 @media only screen and (max-width: 600px) {
+    footer{
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        background-color:#64dd17;
+        color: black;
+    }
     
     .containterforms {
         width: 100%;
@@ -71,6 +80,15 @@
         height: 100%;
         margin-bottom: 48px;
     }
+    footer{
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        background-color:#64dd17;
+        color: black;
+    }
 }
 
 /* Medium devices (768px and up) */
@@ -108,6 +126,16 @@
         height: 80%;
         margin-bottom: 48px;
     }
+    footer{
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        background-color:#64dd17;
+        color: black;
+    }
+
 }
 
 /* Large devices (992px and up) */
@@ -138,5 +166,16 @@
         grid-auto-columns: min-content;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+    footer{
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        background-color:#64dd17;
+        color: black;
+        padding: 2rem;
+        
     }
 }
