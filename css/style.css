@@ -14,6 +14,30 @@ h4 {
 
 @media only screen and (max-width: 600px) {
 
+    .Rutinas{
+        width: 100%;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;  
+    }
+    .Rutinas h2{
+            grid-column: 1/12;
+           grid-row: 1/2; 
+    }
+    .video-container1{
+        grid-column: 1/12;
+       grid-row: 2 /span 6; 
+    }
+    .video-container2{
+        grid-column: 1/12;
+       grid-row: 9 /span 6; 
+    }
+    .video-container3{
+        grid-column: 1/12;
+       grid-row: 16 /span 6; 
+    }
+
     .containterforms {
         width: 100%;
         display: grid;
@@ -83,6 +107,29 @@ h4 {
 
 /* Medium devices (600px and up) */
 @media only screen and (min-width: 600px) {
+    .Rutinas{
+        width: 100%;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;  
+    }
+    .Rutinas h2{
+        grid-column: 1/12;
+       grid-row: 1/2; 
+    }
+    .video-container1{
+        grid-column: 1/4;
+       grid-row: 2 /span 6; 
+    }
+    .video-container2{
+        grid-column: 5/8;
+        grid-row: 2 /span 6;
+    }
+    .video-container3{
+        grid-column: 9/12;
+        grid-row: 2 / span 6; 
+    }
     .containterforms {
         min-width: 100%;
         display: grid;
@@ -141,6 +188,35 @@ h4 {
 
 /* Large devices (992px and up) */
 @media only screen and (min-width: 992px) {
+    .Rutinas{
+        width: 100%;
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;  
+    }
+    .Rutinas h2{
+        grid-column: 1/12;
+       grid-row: 1/2; 
+    }
+    .video-container1{
+        grid-column: 1/5;
+       grid-row: 2 /span 6; 
+    }
+    .video-container2{
+        grid-column: 5/9;
+        grid-row: 2 /span 6;
+    }
+    .video-container3{
+        grid-column: 9 /13;
+        grid-row: 2 / span 6; 
+    }
+    .Rutinas iframe{
+        width: 100%;
+        height: 300px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
     .containterforms {
         min-width: 80%;
         display: grid;
@@ -169,10 +245,10 @@ h4 {
         margin-right: 2rem;
     }
 
-    iframe {
+    .map iframe {
         max-width: 100%;
         height: 80%;
-        margin-bottom: 48px;
+        margin-bottom: 3rem;
     }
 
     footer {
