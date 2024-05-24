@@ -56,10 +56,6 @@ h4 {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     gap: 0px;
-    background-image:url(img\logo-fitzone-transp2.png);
-    background-repeat: repeat;
-    background-color: rgb(43, 41, 41);
-    background-blend-mode: darken;
 }
 .hero-content{
     grid-column: 1/span 12;
@@ -573,11 +569,6 @@ h4 {
         grid-column: 11 / 13;
     }
 
-   /* .hero-img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }*/
     .Equipos h2 {
         grid-column: 1/13;
         text-align: center;
@@ -761,7 +752,6 @@ h4 {
         background-color: #64dd17;
         color: black;
         padding: 2rem;
-
     }
 
     #footline {
