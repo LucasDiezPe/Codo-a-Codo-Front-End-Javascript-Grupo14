@@ -51,14 +51,19 @@ h4 {
     color: white;
 }
 
-.hero-content {
+.Hero {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    align-content: center;
-    justify-content: center;
+    gap: 0px;
+    background-image:url(img\logo-fitzone-transp2.png);
+    background-repeat: repeat;
+    background-color: rgb(43, 41, 41);
+    background-blend-mode: darken;
+}
+.hero-content{
+    grid-column: 1/span 12;
+    grid-row: inherit;
 }
 
 .Equipos {
@@ -155,9 +160,7 @@ h4 {
     }
 
     .hero-img {
-        grid-column: auto;
-        grid-row: auto;
-        object-fit: cover;
+        object-fit:cover;
     }
 
     .hero-text {
@@ -368,11 +371,9 @@ h4 {
         grid-column: 11 / 13;
     }
 
-    .hero-img {
-        grid-column: auto;
-        grid-row: auto;
+    /*.hero-img {
         object-fit: cover;
-    }
+    }*/
 
     .hero-text {
         position: absolute;
@@ -572,28 +573,11 @@ h4 {
         grid-column: 11 / 13;
     }
 
-    .hero-img {
-        grid-column: span 12;
-        grid-row: auto;
+   /* .hero-img {
+        width: 100%;
+        height: auto;
         object-fit: cover;
-    }
-
-    .hero-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        padding: 10px;
-        max-width: 100%;
-        text-align: center;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 100%;
-    }
-
+    }*/
     .Equipos h2 {
         grid-column: 1/13;
         text-align: center;
