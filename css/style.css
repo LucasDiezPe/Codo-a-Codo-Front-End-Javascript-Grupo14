@@ -3,15 +3,18 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #212121;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
-h2 {
+h2 {font-size: large;
     text-align: center;
     color: #64dd17;
     text-transform: uppercase;
 }
 
 h4 {
+    font-size:x-large;
     color: white;
 }
 
@@ -20,6 +23,11 @@ h4 {
     grid-template-columns: repeat(12, 1fr);
     background-color: #64dd17;
     padding: 0 1em;
+    position: fixed;
+    top: 0;
+    left:0;
+    box-shadow: #212121 2rem;
+    z-index: 100;
 }
 
 .logo img {
@@ -60,6 +68,8 @@ h4 {
 .hero-content{
     grid-column: 1/span 12;
     grid-row: auto;
+    position: relative;
+    text-align: center;
 }
 .hero-img {
     object-fit:cover;
@@ -135,6 +145,13 @@ h4 {
 .Rutinas a:hover {
     color: #64dd17;
 }
+.Rutinas iframe {
+    width:100%;
+    height: auto;
+    margin: 0px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
 
 /* MEDIA QUERIES */
 
@@ -162,7 +179,7 @@ h4 {
     }
 
     .hero-img {
-       object-fit:cover;
+       /*object-fit:cover;*/
        width: 100%;
        height: auto;
        max-height:300px;
@@ -175,13 +192,14 @@ h4 {
         transform: translate(-50%, -50%);
         color: white;
         padding: 10px;
-        max-width: 100%;
+        width:auto;
         text-align: center;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 100%;
+        font-size: large;
     }
 
     .Equipos h2 {
@@ -190,6 +208,7 @@ h4 {
         color: #64dd17;
         text-transform: uppercase;
         font-size: 2.5rem;
+
     }
 
     .Producto {
@@ -277,18 +296,42 @@ h4 {
     }
 
     .video-container1 {
-        grid-column: 1/12;
+        grid-column: 1/ span 12;
         grid-row: 2 /span 6;
+        margin: 0px;
+        box-sizing: border-box;
+        object-fit: cover;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #424242;
+        padding: 1rem;
+        transition: transform 0.3s;
     }
 
     .video-container2 {
-        grid-column: 1/12;
+        grid-column: 1/ span 12;
         grid-row: 9 /span 6;
+        margin: 0px;
+        box-sizing: border-box;
+        object-fit: cover;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #424242;
+        padding: 1rem;
+        transition: transform 0.3s;
     }
 
     .video-container3 {
-        grid-column: 1/12;
+        grid-column: 1/ span 12;
         grid-row: 16 /span 6;
+        margin: 0px;
+        box-sizing: border-box;
+        object-fit: cover;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #424242;
+        padding: 1rem;
+        transition: transform 0.3s;
     }
 
     .containterforms {
@@ -319,7 +362,7 @@ h4 {
     }
 
     .map iframe {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         margin-bottom: 2rem;
     }
@@ -376,13 +419,6 @@ h4 {
         grid-column: 11 / 13;
     }
 
-    /*hero-img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    max-height:600px;
-    }*/
-
     .hero-text {
         position: absolute;
         top: 50%;
@@ -422,9 +458,10 @@ h4 {
     .Alimentacion {
         width: 100%;
         display: grid;
-        gap: 0.5rem;
+        gap: 1rem;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
+        padding: 2rem;
     }
 
     .Equipos h2,
@@ -446,7 +483,7 @@ h4 {
     }
 
     .carduno {
-        grid-column: 7/12;
+        grid-column: 7/ span 6;
         grid-row: 3/span 8;
         border-radius: 8px;
         text-align: center;
@@ -457,7 +494,7 @@ h4 {
     }
 
     .carddos {
-        grid-column: 2/7;
+        grid-column: 1/span 6;
         grid-row: 3/span 8;
         border-radius: 8px;
         text-align: center;
@@ -484,23 +521,47 @@ h4 {
     }
 
     .Rutinas h2 {
-        grid-column: 1/13;
+        grid-column: 1/span 12;
         grid-row: 1/2;
     }
 
     .video-container1 {
-        grid-column: 1/4;
+        grid-column: 1/span 4;
         grid-row: 2 /span 6;
+        margin: 0px;
+        box-sizing: border-box;
+        object-fit: cover;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #424242;
+        padding: 1rem;
+        transition: transform 0.3s;
     }
 
     .video-container2 {
-        grid-column: 5/8;
+        grid-column: 5/span 4;
         grid-row: 2 /span 6;
+        margin: 0px;
+        box-sizing: border-box;
+        object-fit: cover;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #424242;
+        padding: 1rem;
+        transition: transform 0.3s;
     }
 
     .video-container3 {
-        grid-column: 9/12;
+        grid-column: 9/span 4;
         grid-row: 2 / span 6;
+        margin: 0px;
+        box-sizing: border-box;
+        object-fit: cover;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #424242;
+        padding: 1rem;
+        transition: transform 0.3s;
     }
 
     .containterforms {
@@ -531,8 +592,8 @@ h4 {
     }
 
     .map iframe {
-        max-width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
         margin-bottom: 48px;
     }
 
@@ -670,8 +731,8 @@ h4 {
     }
 
     .video-container1 {
-        grid-column: 1/5;
-        grid-row: 2 /span 6;
+        grid-column: 1/span 4;
+        grid-row: 2 /span 8;
         margin: 0px;
         box-sizing: border-box;
         object-fit: cover;
@@ -683,8 +744,8 @@ h4 {
     }
 
     .video-container2 {
-        grid-column: 5/9;
-        grid-row: 2 /span 6;
+        grid-column: 5/ span 4;
+        grid-row: 2 /span 8;
         margin: 0px;
         box-sizing: border-box;
         object-fit: cover;
@@ -696,8 +757,8 @@ h4 {
     }
 
     .video-container3 {
-        grid-column: 9 /13;
-        grid-row: 2 / span 6;
+        grid-column: 9 / span 4;
+        grid-row: 2 / span 8;
         margin: 0px;
         box-sizing: border-box;
         object-fit: cover;
@@ -707,15 +768,6 @@ h4 {
         padding: 1rem;
         transition: transform 0.3s;
     }
-
-    .Rutinas iframe {
-        width: 100%;
-        height: 300px;
-        margin: 0px;
-        border-radius: 8px;
-        object-fit: cover;
-    }
-
     .containterforms {
         min-width: 80%;
         display: grid;
